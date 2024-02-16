@@ -204,3 +204,39 @@ p {
 .page {
   min-height: calc(100vh - (20vh + 10rem));
 }
+      .anime {
+        animation: 95s linear infinite corgis;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("https://colab.research.google.com/v2/common/img/chocolatechip.gif"),
+          url("https://colab.research.google.com/v2/common/img/chocolatechip.gif"),
+          url("https://colab.research.google.com/v2/common/img/chocolatechip.gif"),
+          url("https://colab.research.google.com/v2/common/img/chocolatechip.gif");
+        height: 120px;
+      }
+
+      @keyframes corgis {
+        0% {
+          background-position: 120% center, -20% center, -20% center,
+            120% center;
+        }
+
+        25%,
+        30% {
+          background-position: -20% center, -20% center, -20% center,
+            120% center;
+        }
+
+        55%,
+        65% {
+          background-position: -20% center, 120% center, -20% center,
+            120% center;
+        }
+
+        100%,
+        95% {
+          background-position: -20% center, 120% center, 120% center,
+            -20% center;
+        }
+      }
+    
